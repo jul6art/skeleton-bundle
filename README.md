@@ -153,6 +153,16 @@ in [phpunit.xml.dist](https://github.com/jul6art/skeleton-bundle/blob/master/php
 
 Update the [README.md](https://github.com/jul6art/skeleton-bundle/blob/master/README.md) file if needed
 
+Deploy (optional)
+-----------------
+
+Deploy your bundle to the final github [github](https://github.com/) and link this repo to [packagist](https://packagist.org/) so your can now require your bundle globally
+
+```console
+# @TODO update the namespace 
+composer require jul6art/skeleton-bundle
+```
+
 License
 -------
 
