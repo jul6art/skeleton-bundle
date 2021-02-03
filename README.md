@@ -15,7 +15,7 @@ Symfony skeleton bundle
 Usage
 -----
 
-* Download this library
+* Download [the archive](https://github.com/jul6art/skeleton-bundle/archive/master.zip)
 * Change the bundle name according to your needs with the following updates
 
 Updates
