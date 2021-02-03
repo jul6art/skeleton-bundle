@@ -156,7 +156,7 @@ Update the [README.md](https://github.com/jul6art/skeleton-bundle/blob/master/RE
 Deploy (optional)
 -----------------
 
-Deploy your bundle to the final github [github](https://github.com/) and link this repo to [packagist](https://packagist.org/) so your can now require your bundle globally
+Deploy your bundle to the final [github](https://github.com/) account and link this repo to [packagist](https://packagist.org/) so your can now require your bundle globally
 
 ```console
 # @TODO update the namespace 
