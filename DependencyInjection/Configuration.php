@@ -1,7 +1,7 @@
 <?php
 
 // @TODO update the namespace
-namespace Jul6Art\SkeletonBundle\DependencyInjection;
+namespace Jul6Art\AuthBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;
@@ -17,7 +17,7 @@ class Configuration implements ConfigurationInterface
     public function getConfigTreeBuilder()
     {
         // @TODO update the bundle configuration root name
-        $builder = new TreeBuilder('skeleton');
+        $builder = new TreeBuilder('auth');
 
         $node = $builder->getRootNode();
 
