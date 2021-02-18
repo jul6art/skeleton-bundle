@@ -2,8 +2,8 @@
 
 <phpunit bootstrap="./vendor/autoload.php" colors="true">
     <testsuites>
-        <!-- @TODO update the bundle name in "symfonyBundleAuth test suite" -->
-        <testsuite name="symfonyBundleAuth test suite">
+        <!-- @TODO update the bundle name in "symfonyBundleSkeleton test suite" -->
+        <testsuite name="symfonyBundleSkeleton test suite">
             <directory suffix="Test.php">./Tests</directory>
         </testsuite>
     </testsuites>

@@ -1,7 +1,7 @@
 <?php
 
 // @TODO update the namespace
-namespace Jul6Art\AuthBundle\DependencyInjection;
+namespace Jul6Art\SkeletonBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
@@ -10,11 +10,11 @@ use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
- * Class AuthExtension.
+ * Class SkeletonExtension.
  *
  * @TODO rename the class with YourBundleExtension
  */
-class AuthExtension extends Extension implements PrependExtensionInterface
+class SkeletonExtension extends Extension implements PrependExtensionInterface
 {
     /**
      * {@inheritdoc}
@@ -30,7 +30,7 @@ class AuthExtension extends Extension implements PrependExtensionInterface
 
         // @TODO update the namespace to compile
         $this->addAnnotatedClassesToCompile([
-            'Jul6Art\\AuthBundle\\',
+            'Jul6Art\\SkeletonBundle\\',
         ]);
     }
 

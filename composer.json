@@ -1,8 +1,8 @@
 {
-    "name": "jul6art/auth-bundle",
+    "name": "jul6art/skeleton-bundle",
     "type": "symfony-bundle",
-    "description": "Symfony auth bundle",
-    "homepage": "https://github.com/jul6art/auth-bundle",
+    "description": "Symfony skeleton bundle",
+    "homepage": "https://github.com/jul6art/skeleton-bundle",
     "license": "MIT",
     "authors": [
         {
@@ -13,7 +13,6 @@
     ],
     "require": {
         "php": "^7.4",
-        "jul6art/core-bundle": "^1.0",
         "symfony/config": "^4.4 || ^5.0",
         "symfony/dependency-injection": "^4.4 || ^5.0",
         "symfony/http-kernel": "^4.4 || ^5.0"
@@ -26,7 +25,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Jul6Art\\AuthBundle\\": ""
+            "Jul6Art\\SkeletonBundle\\": ""
         }
     },
     "autoload-dev": {

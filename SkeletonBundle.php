@@ -1,15 +1,15 @@
 <?php
 
 // @TODO update the namespace
-namespace Jul6Art\AuthBundle;
+namespace Jul6Art\SkeletonBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 /**
- * Class AuthBundle.
+ * Class SkeletonBundle.
  *
  * @TODO rename the class with YourBundleName
  */
-class AuthBundle extends Bundle
+class SkeletonBundle extends Bundle
 {
 }
