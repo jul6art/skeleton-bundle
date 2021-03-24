@@ -164,7 +164,7 @@ Deploy (optional)
 
 Deploy your bundle to the final [github](https://github.com/) account and link this repo to [packagist](https://packagist.org/) so your can now require your bundle globally
 
-```console
+```shell
 # @TODO update the namespace 
 composer require jul6art/skeleton-bundle
 ```
