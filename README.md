@@ -12,6 +12,12 @@ jul6art/skeleton-bundle
 Symfony skeleton bundle
 -----------------------
 
+Requirements
+------------
+
+* **php ^7.4 || ^8.0**
+* **symfony ^4.4 || ^5.0**
+
 Usage
 -----
 
