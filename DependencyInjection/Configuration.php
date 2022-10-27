@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
     /**
      * {@inheritdoc}
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         // @TODO update the bundle configuration root name
         $builder = new TreeBuilder('skeleton');
