@@ -13,15 +13,15 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "symfony/config": "^4.4 || ^5.0",
-        "symfony/dependency-injection": "^4.4 || ^5.0",
-        "symfony/http-kernel": "^4.4 || ^5.0"
+        "symfony/config": "^4.4 || ^5.0 || ^6.0",
+        "symfony/dependency-injection": "^4.4 || ^5.0 || ^6.0",
+        "symfony/http-kernel": "^4.4 || ^5.0 || ^6.0"
     },
     "require-dev": {
         "dama/doctrine-test-bundle": "^6.0",
         "phpunit/phpunit": "^7.0",
-        "symfony/phpunit-bridge": "^4.4 || ^5.0",
-        "symfony/var-dumper": "^4.4 || ^5.0"
+        "symfony/phpunit-bridge": "^4.4 || ^5.0 || ^6.0",
+        "symfony/var-dumper": "^4.4 || ^5.0 || ^6.0"
     },
     "autoload": {
         "psr-4": {
