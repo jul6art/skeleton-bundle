@@ -23,7 +23,7 @@ class Configuration implements ConfigurationInterface
 
         $node
             ->children()
-                ->scalarNode('enabled')->defaultTrue()->end()
+                ->booleanNode('enabled')->defaultTrue()->end()
             ->end();
 
         return $builder;
