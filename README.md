@@ -4,7 +4,7 @@
 
 <p align="center">
     <a href="https://opensource.org/licenses/MIT" target="_blank"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License"></a>
-    <img src="https://img.shields.io/static/v1?label=stable&message=v1&color=orange" alt="Version">
+    <img src="https://img.shields.io/static/v1?label=stable&message=v2&color=orange" alt="Version">
 </p>
 
 jul6art/skeleton-bundle
@@ -15,8 +15,8 @@ Symfony skeleton bundle
 Requirements
 ------------
 
-* **php ^7.4 || ^8.0**
-* **symfony ^4.4 || ^5.0 || ^6.0**
+* **php ^8.5**
+* **symfony ^7.4 || ^8.0**
 
 Usage
 -----
@@ -44,16 +44,15 @@ update the [composer.json](https://github.com/jul6art/skeleton-bundle/blob/maste
         }
     ],
     "require": {
-        "php": "^7.4",
-        "symfony/config": "^4.4 || ^5.0",
-        "symfony/dependency-injection": "^4.4 || ^5.0",
-        "symfony/http-kernel": "^4.4 || ^5.0"
+        "php": "^8.5",
+        "symfony/config": "^7.4 || ^8.0",
+        "symfony/dependency-injection": "^7.4 || ^8.0",
+        "symfony/http-kernel": "^7.4 || ^8.0"
     },
     "require-dev": {
-        "dama/doctrine-test-bundle": "^6.0",
-        "phpunit/phpunit": "^7.0",
-        "symfony/phpunit-bridge": "^4.4 || ^5.0",
-        "symfony/var-dumper": "^4.4 || ^5.0"
+        "phpunit/phpunit": "^12.0 || ^13.0",
+        "symfony/phpunit-bridge": "^7.4 || ^8.0",
+        "symfony/var-dumper": "^7.4 || ^8.0"
     },
     "autoload": {
         "psr-4": {
@@ -103,7 +102,7 @@ class Configuration implements ConfigurationInterface
     /**
      * {@inheritdoc}
      */
-    public function getConfigTreeBuilder()
+    public function getConfigTreeBuilder(): TreeBuilder
     {
         // @TODO update the bundle configuration root name
         $builder = new TreeBuilder('skeleton');
@@ -133,14 +132,9 @@ class SkeletonExtension extends Extension implements PrependExtensionInterface
     /**
      * {@inheritdoc}
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         // ...
-
-        // @TODO update the namespace to compile
-        $this->addAnnotatedClassesToCompile([
-            'Jul6Art\\SkeletonBundle\\',
-        ]);
     }
 
     // ...
@@ -151,9 +145,9 @@ class SkeletonExtension extends Extension implements PrependExtensionInterface
 in [phpunit.xml.dist](https://github.com/jul6art/skeleton-bundle/blob/master/phpunit.xml.dist) file, update the bundle name
 
 ```xml
-<!-- @TODO update the bundle name in "SkeletonBundle test suite" -->
-<testsuite name="SkeletonBundle test suite">
-    <directory suffix="Test.php">./Tests</directory>
+<!-- @TODO update the bundle name in "Skeleton Bundle test suite" -->
+<testsuite name="Skeleton Bundle test suite">
+    <directory suffix="Test.php">Tests</directory>
 </testsuite>
 ```
 

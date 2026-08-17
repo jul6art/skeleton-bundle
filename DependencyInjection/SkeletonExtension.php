@@ -5,9 +5,9 @@ namespace Jul6Art\SkeletonBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Extension\PrependExtensionInterface;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 /**
  * Class SkeletonExtension.
@@ -19,7 +19,7 @@ class SkeletonExtension extends Extension implements PrependExtensionInterface
     /**
      * {@inheritdoc}
      */
-    public function load(array $configs, ContainerBuilder $container)
+    public function load(array $configs, ContainerBuilder $container): void
     {
         $loader = new YamlFileLoader(
             $container,
@@ -27,11 +27,6 @@ class SkeletonExtension extends Extension implements PrependExtensionInterface
         );
 
         $loader->load('services.yaml');
-
-        // @TODO update the namespace to compile
-        $this->addAnnotatedClassesToCompile([
-            'Jul6Art\\SkeletonBundle\\',
-        ]);
     }
 
     /**
@@ -39,10 +34,8 @@ class SkeletonExtension extends Extension implements PrependExtensionInterface
      *
      * @throws \Exception
      */
-    public function prepend(ContainerBuilder $container)
+    public function prepend(ContainerBuilder $container): void
     {
-        $bundles = $container->getParameter('kernel.bundles');
-
         $configs = $container->resolveEnvPlaceholders($container->getExtensionConfig($this->getAlias()), true);
 
         $config = $this->processConfiguration(new Configuration(), $configs);
