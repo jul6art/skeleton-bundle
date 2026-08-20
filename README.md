@@ -1,3 +1,9 @@
+> ⚠️ **This project has been archived and is no longer maintained.**
+>
+> Please use the **[Symfony Bundle Generator](https://github.com/jul6art/symfony-bundle-generator)** instead.
+
+
+
 <p align="center">
     <a href="https://devinthehood.com"><img src="https://github.com/jul6art/symfony-skeleton-generator/blob/master/public/img/logo.png?raw=true" alt="logo dev in the hood" width="400"></a>
 </p>
